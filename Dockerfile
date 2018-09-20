@@ -1,6 +1,6 @@
 FROM alpine:latest
 LABEL MAINTAINER="Ankush Walia"
-RUN apk add --update nginx:latest && \
+RUN apk add --update nginx && \
 	rm -rf /var/cache/apk/* && \
 	mkdir -p /tmp/nginx
 EXPOSE 80/TCP
